@@ -24,8 +24,8 @@ app.listen(port, () => {
 
 app.get('/users', async (req, res) => {
     try {
-      // Use the pool to query the database
-      const result = await pool.query('SELECT * FROM users'); // Replace 'users' with your table name
+      
+      const result = await pool.query('SELECT * FROM users'); 
       res.json(result.rows);
     } catch (err) {
       console.error('Error executing query', err);

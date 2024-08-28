@@ -8,4 +8,4 @@ export const createUser = async (name: string, email: string, type: string, pass
   return result.rows[0];
 };
 
-// Add other user-related functions
+
